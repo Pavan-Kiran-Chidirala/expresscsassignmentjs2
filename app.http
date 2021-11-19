@@ -1,0 +1,51 @@
+POST http://localhost:3000/register/
+Content-Type: application/json
+
+{
+  "username": "prem_chand",
+  "password": "prem_567",
+  "name": "Prem Chand",
+  "gender": "male"
+}
+###
+POST http://localhost:3000/login/
+Content-Type: application/json
+
+{
+  "username":"JoeBiden",
+  "password":"biden@123"
+}
+//eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjM3MjQ4MTQ1fQ.QHhY30WJqxUXYPMbQ2K0zbSGLBunLJUan3REAeDZHa8
+###
+GET http://localhost:3000/user/tweets/feed/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjM3MjQ4MTQ1fQ.QHhY30WJqxUXYPMbQ2K0zbSGLBunLJUan3REAeDZHa8
+###
+GET http://localhost:3000/user/following/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjM3MjQ4MTQ1fQ.QHhY30WJqxUXYPMbQ2K0zbSGLBunLJUan3REAeDZHa8
+###
+GET http://localhost:3000/user/followers/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjM3MjQ4MTQ1fQ.QHhY30WJqxUXYPMbQ2K0zbSGLBunLJUan3REAeDZHa8
+###
+GET http://localhost:3000/tweets/7/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjM3MjQ4MTQ1fQ.QHhY30WJqxUXYPMbQ2K0zbSGLBunLJUan3REAeDZHa8
+###
+GET http://localhost:3000/tweets/1/likes/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjM3MjQ4MTQ1fQ.QHhY30WJqxUXYPMbQ2K0zbSGLBunLJUan3REAeDZHa8
+###
+GET http://localhost:3000/tweets/1/replies/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjM3MjQ4MTQ1fQ.QHhY30WJqxUXYPMbQ2K0zbSGLBunLJUan3REAeDZHa8
+###
+GET http://localhost:3000/user/tweets/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjM3MjQ4MTQ1fQ.QHhY30WJqxUXYPMbQ2K0zbSGLBunLJUan3REAeDZHa8
+###
+POST http://localhost:3000/user/tweets/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjM3MjQ4MTQ1fQ.QHhY30WJqxUXYPMbQ2K0zbSGLBunLJUan3REAeDZHa8
+Content-Type: application/json
+
+{
+   "tweet": "hoooooooodeeee"
+}
+###
+DELETE http://localhost:3000/tweets/3/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjM3MjQ4MTQ1fQ.QHhY30WJqxUXYPMbQ2K0zbSGLBunLJUan3REAeDZHa8
+###
